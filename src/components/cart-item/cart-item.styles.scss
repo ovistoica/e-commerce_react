@@ -1,21 +1,23 @@
 .cart-item {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
   width: 100%;
-  margin-bottom: 15px;
+  display: flex;
   height: 80px;
+  margin-bottom: 15px;
 
   img {
     width: 30%;
   }
 
   .item-details {
+    width: 70%;
     display: flex;
     flex-direction: column;
-    width: 70%;
-    justify-content: center;
     align-items: flex-start;
+    justify-content: center;
     padding: 10px 20px;
+
+    .name {
+      font-size: 16px;
+    }
   }
 }

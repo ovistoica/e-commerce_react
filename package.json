@@ -2,6 +2,9 @@
   "name": "e-commerce_react",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "12.8.1"
+  },
   "dependencies": {
     "firebase": "^6.4.2",
     "node-sass": "^4.12.0",

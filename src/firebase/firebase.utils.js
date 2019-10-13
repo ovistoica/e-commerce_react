@@ -12,7 +12,7 @@ export const signInWithGoogle = () => auth.signInWithPopup(provider);
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
 
-export const createUserProfileDocument = async (userAuth, aditionalData) => {
+export const createUserProfileDocument = async (userAuth, additionalData) => {
   if (!userAuth) {
     return;
   }
@@ -29,7 +29,7 @@ export const createUserProfileDocument = async (userAuth, aditionalData) => {
         displayName,
         email,
         createdAt,
-        ...aditionalData,
+        ...additionalData,
       });
     } catch (error) {
       console.log('Error creating user', error.message);
